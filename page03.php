@@ -1,6 +1,6 @@
 <html ng-app='myApp'>
     <head>
-        <title>Your Shopping Cart</title>
+        <title>Your Shopping Cart. page03</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body >

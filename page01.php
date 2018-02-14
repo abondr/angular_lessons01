@@ -1,5 +1,5 @@
 <html ng-app="myApplication">
-    <title>Angular js page01</title>
+    <title>Angular js page05</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <body>
 
