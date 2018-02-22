@@ -14,16 +14,17 @@
                         <input ng-change="computeNeeded()" ng-model="funding.startingEstimate">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label>Recommendation:</label>
-                    <div class="col-lg-10">
-                        {{funding.needed}}
-                    </div>
-                </div>
+
                 <div class="col-lg-10 col-lg-offset-2">
                     <button>Fund my startup!</button>
                 </div>
             </form>    
+            <div class="form-group">
+                <label>Recommendation:</label>
+                <div class="col-lg-10">
+                    {{funding.needed}}
+                </div>
+            </div>
         </div>
 
         <script src="assets/js/angular.min.js"></script>
