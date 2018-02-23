@@ -22,7 +22,7 @@ app.controller('controller01', function ($scope) {
     };
 
     function calculateDiscount(newValue, oldValue, scope) {
-        $scope.bill.discount = newValue > 100 ? 10 : 0;
+        $scope.bill.discount = newValue > 100 ? oldValue/10 : 0;
     }
 
     $scope.$watch($scope.totalCart, calculateDiscount);
