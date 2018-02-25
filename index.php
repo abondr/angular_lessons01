@@ -8,16 +8,21 @@
     <body class="body">
         <div class="container-fluid">
             <div class="row">
-                <ul class="list-inline-item">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th>List</th>
+                    </tr>
                     <?php
                     $files = glob(__DIR__ . DIRECTORY_SEPARATOR . "*.php");
                     foreach ($files as $file) {
                         $filePath = substr($file, strlen(__DIR__), strlen($file) - strlen(__DIR__));
                         $fileName = substr($filePath, 1,-4);
-                        echo "<li><a href='http://localhost/angla01{$filePath}'>{$fileName}</a></li>";
+                        if($fileName!='index'){
+                            echo "<tr><td><a href='http://localhost/angla01{$filePath}'>{$fileName}</td></tr>";
+                        }                        
                     }
-                    ?>            
-                </ul>
+                    ?>
+                </table>
             </div>
         </div>
 
