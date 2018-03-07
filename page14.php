@@ -18,12 +18,12 @@
                     <td>{{item.name}}</td>
                     <td><input ng-model="item.quantity"></td>
                     <td><input ng-model="item.price"></td>
-                    <td>{{item.quantity * item.price}}</td>
+                    <td>{{item.quantity * item.price |currency:'&#8377;'}}</td>
                     <td><button class="btn btn-dark" ng-click="remove($index)">Remove</button></td>
                 </tr>
                 <tr>
                     <td colspan="2">total items : {{totalArr.totalItem}}</td>
-                    <td colspan="2">total amount : {{totalArr.totalPrice}}</td>
+                    <td colspan="2">total amount : {{totalArr.totalPrice | currency:'&#8377;'}}</td>
                 </tr>
             </table>
         </div>

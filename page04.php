@@ -26,8 +26,8 @@
     <script src="customs/js/page0401.js"></script>
     <script src="customs/js/page0402.js"></script>
     <script>
-                        angular.bootstrap(document.getElementById("app2"), ['application01']);
-                        angular.bootstrap(document.getElementById("app1"), ['application02']);
+        angular.bootstrap(document.getElementById("app2"), ['application01']);
+        angular.bootstrap(document.getElementById("app1"), ['application02']);
     </script>
 </body>
 </html>
